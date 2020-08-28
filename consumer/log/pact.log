@@ -1,0 +1,6 @@
+# Logfile created on 2020-08-28 14:41:23 +0300 by logger.rb/66358
+I, [2020-08-28T14:41:23.046972 #19846]  INFO -- : Starting app Provider App #<Pact::MockService::App:0x00005576c4fbb7c0> on port 1234...
+I, [2020-08-28T14:41:23.158040 #19846]  INFO -- : Started on port 1234
+I, [2020-08-28T14:41:23.216644 #19846]  INFO -- : Clearing all expectations
+I, [2020-08-28T14:41:23.223867 #19846]  INFO -- : Verifying interactions for ProviderAppClient user works
+D, [2020-08-28T14:41:23.227699 #19846] DEBUG -- : Supposed to be stopping

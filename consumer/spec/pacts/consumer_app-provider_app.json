@@ -1,0 +1,37 @@
+{
+  "consumer": {
+    "name": "Consumer App"
+  },
+  "provider": {
+    "name": "Provider App"
+  },
+  "interactions": [
+    {
+      "description": "a request for an alligator",
+      "providerState": "an alligator exists",
+      "request": {
+        "method": "get",
+        "path": "/user",
+        "query": ""
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "user": {
+            "name": "Agile",
+            "joined_at": "2020-08-28 14:41:23 +0300",
+            "age": 10
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+I, [2020-08-28T14:41:23.217884 #19846]  INFO -- : Cleared interactions for example "ProviderAppClient user works"
+I, [2020-08-28T14:41:23.219484 #19846]  INFO -- : Registered expected interaction GET /user
+D, [2020-08-28T14:41:23.219595 #19846] DEBUG -- : {
+  "description": "a request for an alligator",
+  "providerState": "an alligator exists",
+  "request": {
+    "method": "get",
+    "path": "/user",
+    "query": ""
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "user": {
+        "name": "Agile",
+        "joined_at": "2020-08-28 14:41:23 +0300",
+        "age": 10
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2020-08-28T14:41:23.221396 #19846]  INFO -- : Received request GET /user
+D, [2020-08-28T14:41:23.221488 #19846] DEBUG -- : {
+  "path": "/user",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept-Encoding": "gzip;q=1.0,deflate;q=0.6,identity;q=0.3",
+    "Accept": "*/*",
+    "User-Agent": "Ruby",
+    "Host": "localhost:1234",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-08-28T14:41:23.221599 #19846]  INFO -- : Found matching response for GET /user
+D, [2020-08-28T14:41:23.221644 #19846] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "user": {
+      "name": "Agile",
+      "joined_at": "2020-08-28 14:41:23 +0300",
+      "age": 10
+    }
+  }
+}
+I, [2020-08-28T14:41:23.224726 #19846]  INFO -- : Verifying - interactions matched for example "ProviderAppClient user works"
+I, [2020-08-28T14:41:23.226661 #19846]  INFO -- : Writing pact for Provider App to /home/constantin/Projects/samples/consumer_driven_testing/consumer/spec/pacts/consumer_app-provider_app.json
